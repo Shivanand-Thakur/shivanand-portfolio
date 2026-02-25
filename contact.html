@@ -44,11 +44,10 @@
                     </p>
                 </div>
 
-                <form name="contact" method="POST" data-netlify="true" action="/contact.html" class="contact-form">
+                <form name="contact" method="POST" data-netlify="true" action="contact.html" class="contact-form">
     
                 <!-- Hidden input required for Netlify -->
                 <input type="hidden" name="form-name" value="contact">
-                <input type="hidden" name="redirect" value="/contact.html?success=true">
 
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -69,14 +68,6 @@
     <footer>
         <p>© 2026 Shivanand Thakur</p>
     </footer>
-    
-    <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        document.getElementById('success-message').style.display = 'block';
-    }
-</script>
-
-</body>
 <script src="assets/js/script.js"></script>
+</body>
 </html>
