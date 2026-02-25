@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Shivanand Thakur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="logo">Shivanand Thakur</div>
+
+    <div class="menu-toggle" id="mobile-menu">
+        ☰
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="certifications.html" class="active">Certifications</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+    <section class="page-section reveal">
+        <div class="container">
+            <h1 class="page-title">Contact Me</h1>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+                    <p><strong>Email:</strong>shivanandsinghthakur1@gmail.com</p>
+                    <p><strong>Location:</strong> India</p>
+                    <p><strong>GitHub:</strong> 
+                        <a href="https://github.com/Shivanand-Thakur/" target="_blank">View Profile</a>
+                    </p>
+                    <p><strong>LinkedIn:</strong> 
+                        <a href="https://www.linkedin.com/in/shivanand-thakur-/" target="_blank">Connect with me</a>
+                    </p>
+                </div>
+
+                <form name="contact" method="POST" data-netlify="true" action="/contact.html?success=true" class="contact-form">
+    
+                <!-- Hidden input required for Netlify -->
+                <input type="hidden" name="form-name" value="contact">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    
+                <button type="submit" class="btn primary">Send Message</button>
+
+                </form>
+
+                <div id="success-message" class="success-message">
+                        ✅ Message sent successfully! I will get back to you soon.
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Shivanand Thakur</p>
+    </footer>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
