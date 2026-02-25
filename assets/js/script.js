@@ -42,10 +42,13 @@ window.addEventListener("load", revealOnScroll);
 
 
 // Show Success Message After Submission
-const urlParams = new URLSearchParams(window.location.search);
-if (urlParams.get('success') === 'true') {
-    const successMessage = document.getElementById("success-message");
-    if (successMessage) {
-        successMessage.style.display = "block";
+// Contact form success handler
+document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("success") === "true") {
+        const successBox = document.getElementById("success-message");
+        if (successBox) {
+            successBox.style.display = "block";
+        }
     }
-}
+});
