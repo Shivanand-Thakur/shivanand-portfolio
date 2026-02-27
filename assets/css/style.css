@@ -640,3 +640,24 @@ body {
 .project-btn:hover {
     background: #3399ff;
 }
+
+.success-message {
+    margin-top: 25px;
+    padding: 18px 24px;
+    border-radius: 12px;
+    background: rgba(0, 255, 170, 0.08);
+    border: 1px solid rgba(0, 255, 170, 0.3);
+    backdrop-filter: blur(12px);
+    color: #00ffcc;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.2);
+}
+
+.success-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
