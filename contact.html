@@ -47,24 +47,25 @@
                 </div>
 
                 <!-- Netlify Form -->
-                <form name="contact"
-                      method="POST"
-                      data-netlify="true"
-                      class="contact-form"
-                      onsubmit="handleSubmit(event)">
+                 <form name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify
+      class="contact-form"
+      onsubmit="handleSubmit(event)">
 
-                    <!-- Required Hidden Field -->
-                    <input type="hidden" name="form-name" value="contact">
+    <!-- Netlify Hidden Input -->
+    <input type="hidden" name="form-name" value="contact" />
 
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    <button type="submit" class="btn primary">
-                        Send Message
-                    </button>
+    <button type="submit" class="btn primary">
+        Send Message
+    </button>
 
-                </form>
+</form>
 
             </div>
         </div>
